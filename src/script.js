@@ -1,4 +1,3 @@
-import axios from "axios";
 let apiKey = "f1f501c888b4b930b3a7e076cecf3a88";
 
 function formatDate() {
