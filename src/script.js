@@ -3,10 +3,20 @@ let apiKey = "f1f501c888b4b930b3a7e076cecf3a88";
 function formatDate() {
   let now = new Date();
   let hours = now.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
 
   let minutes = now.getMinutes();
-
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  
+ 
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[now.getDay()];
 
   let dateEl = document.querySelector("#date");
