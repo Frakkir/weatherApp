@@ -26,6 +26,12 @@ ul {
     padding: 0;
 }
 
+.weather-app-wrapper {
+margin: 30px auto;
+max-width: 600px;
+
+}
+
 .weather-app {
     margin: 30px auto;
     padding: 20px;
@@ -39,4 +45,8 @@ ul {
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
+}
+
+.units {
+    text-align: top;
 }

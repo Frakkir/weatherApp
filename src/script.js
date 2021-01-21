@@ -31,9 +31,10 @@ function showTemperature(response) {
   humidity.innerHTML = response.data.main.humidity;
   wind.innerHTML = response.data.wind.speed;
   let temperature = document.querySelector("#temperature");
-  temperature.innerHTML = response.data.main.temp;
+  temperature.innerHTML = Math.round (response.data.main.temp);
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
+
 }
 
 function getCurrent() {
