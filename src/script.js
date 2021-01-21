@@ -34,7 +34,8 @@ function showTemperature(response) {
   temperature.innerHTML = Math.round (response.data.main.temp);
   let city = document.querySelector("#city");
   city.innerHTML = response.data.name;
-
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = response.data.weather[0].description;
 }
 
 function getCurrent() {
