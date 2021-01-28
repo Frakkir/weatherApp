@@ -53,6 +53,37 @@ max-width: 600px;
     margin: 0;
 }
 
-.units {
-    text-align: top;
+.weather-temperature img {
+
+    margin-right: 5px;
+    height: 64px;
+    width: 64px;
 }
+
+.weather-temperature stong {
+    color:rgb(33, 33, 33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.weather-temperature .units {
+    text-align: top;
+    font-size: 16px;
+
+}
+
+.weather-temperature .units a {
+    text-decoration: none;
+}
+
+.weather-temperature .active {
+    color: rgb(33, 33, 33);
+    cursor: default;
+}
+
+
+
+
+
+
